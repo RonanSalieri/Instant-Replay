@@ -6,10 +6,12 @@ Lien de démonstration : http://soft.rf.gd/instantreplay/
 Dans la version démonstration, il n'est pas possible d'insérer ou d'effacer les fichiers.
 
 I - INTRODUCTION
+
 Un instant Replay, dans le domaine de la sonorisation, est un appareil permettant de lancer des morceaux audio comme des jingles et des virgules.
 Cette application permet d'avoir, en ligne, neufs lecteurs programmables avec 3 points de démarrage (CUE) programmables grâce à un éditeur interne.
 
 II - LECTEURS
+
 Au démarrage de l'application, l'écran affiche neufs players sous forme de cartouche.
 Un player contient un seul morceau audio. Le titre est affiché en haut à gauche après le numéro du slot.
 Chaque lecteur, identique dans leurs fonctions, possèdent 3 boutons CUE programmés, permettant de démarrer le morceau audio choisi au temps voulu.
@@ -19,6 +21,7 @@ Le slider VOLUME gère le niveau de sortie audio du morceau.
 Le menu "Lecteurs" permet de revenir dans cette partie du logiciel.
 
 III - GESTION DES FICHIERS
+
 En cliquant, dans le menu FICHIER, on entre dans le gestionnaire de fichiers.
 La partie haute permet de télécharger un nouveau fichier dans le logiciel. La partie basse, permet de visualiser, sous forme d'un tableau, les titres déjà présents dans la bibiothèque.
 Pour chaque titres de la bibliothèque, un lecteur est disponible pour pré-écouter le fichier audio.
@@ -28,12 +31,15 @@ Cliquer sur la partie grise "Choisir un ficher" afin d'ouvrir la fenêtre permet
 Cliquer sur le bouton ajouter pour télécharger le fichier audio.
 
 NOTA
+
 Les fichiers téléchargeables ne peuvent posséder que l'extension WAV ou du MP3.
 La taille des fichiers, par défaut, ne doit pas dépasser 2 Mo mais ceci est en fonction de l'hébergement de l'application. Voir la section installation.
 2 - TABLEAU DE LA BIBLIOTHEQUE & FONCTIONS
 Le tableau de la bibliothèque de fichier reprends le numéro interne à la bibliotèque des titres.
 Le nom fourni lors du téléchargement du fichier, le nom du fichier inscrit sur le disque dur, un lecteur pour écouter le titre audio et une colonne action, qui possède un bouton DETRUIRE pour effacer définitivement le fichier de la base de données et du disque dur.
+
 NOTA
+
 Dans la version Démonstration du logiciel, aucune de ces fonctions n'est actives.
 IV - EDITION DES SLOTS
 Pour éditer un morceau et programmer ses points CUE, utiliser le menu SLOTS et choisir le slot numéroté approprié.
@@ -47,6 +53,7 @@ Un bouton de lecture qui démarre le titre audio à la position inscrite dans le
 5 - Pour enregistrer la totalité des données inscrites dans les champs CUE, appuyer sur le bouton rouge SAUVEGARDER.
 
 IV - INSTALLATION
+
 Ce script est sous license libre.
 Ce script doit être installé sur un serveur Internet utilisant les technologies APACHE, PHP MYSQL et PHPMYADMIN pour administrer la base de données.
 Les sources BOOTSTRAP et WAVESURFER.JS sont intégrées avec le script.
@@ -224,6 +231,7 @@ MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 ETAPE 3
+
 Modifier le fichier "connect.php" qui se trouve dans le répertoire principal du script.
 Entrer les informations liées au serveur Internet utilisé :
 $bdd = new PDO('mysql:host=localhost;port=3306;dbname=nom_de_la_base_de_donnee;charset=utf8', 'login', 'motdepasse');
@@ -234,10 +242,13 @@ DBNAME : doit comporter le nom de la base de données utilisée.
 A la place de LOGIN et MOTDEPASSE, entrer les informations d'accès à la base de données fournies par le fournisseur de service.
 
 ETAPE 4
+
 Dans un navigateur, écrire l'adresse correspondante à votre serveur et le dossier contenant le script. Par exemple, https://monsite.com/instantreplay/".
 
 V - CONCLUSION
+
 Ce script est fonctionnel avec les navigateur Google Chrome, Microsoft Edge, Firefox, Brave, Opera sur PC avec une résolution de 1920 x 1080 pixels.
+
 NOTA
 La limitation de la taille des fichiers à télécharger est limité par la configuration du serveur PHP dans le fichier PHP.INI
 Cette limitation est inscrite à la ligne : upload_max_filesize.
