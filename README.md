@@ -41,7 +41,9 @@ Le nom fourni lors du téléchargement du fichier, le nom du fichier inscrit sur
 NOTA
 
 Dans la version Démonstration du logiciel, aucune de ces fonctions n'est actives.
+
 IV - EDITION DES SLOTS
+
 Pour éditer un morceau et programmer ses points CUE, utiliser le menu SLOTS et choisir le slot numéroté approprié.
 1 - Le premier champs permet de choisir un titre inclu dans la bibliothèque. Une fois sélectionné, il se met en place automatiquement et le nom du fichier s'inscrit après EDITION DU FICHIER.
 2 - La forme du fichier apparaît avec en dessous la position exprimée en seconde.
