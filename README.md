@@ -62,10 +62,13 @@ Les sources BOOTSTRAP et WAVESURFER.JS sont intégrées avec le script.
 Pour le bon fonctionnement de ce dernier, le logiciel doit tourné avec une connection Internet active.
 
 ETAPE 1
+
 Copier le contenu du dossier dans un répertoire accessible sur votre serveur web.
 
 ETAPE 2
+
 Créer une base de données MYSQL ou utiliser une déjà existante et executer le code SQL ci-dessous :
+
 CREATE TABLE music (
 id int(11) NOT NULL,
 musicname text NOT NULL,
